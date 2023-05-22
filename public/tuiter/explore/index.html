@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tuiter - Explore (Bootstrap)</title>
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="index-bootstrap.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  rel="stylesheet"/>
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <div class="container-fluid">
+    <div class="row"> 
+      <div class="col-md-2 col-1 col-sm-2 col-lg-2 col-2">
+        <div class="list-group">
+          <i class="fab fa-twitter fa-3x mb-4"></i>
+          <a href="../home.html" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-house fa-sm" width="16px" height="16px"></i>
+              <span class="d-sm-none d-none d-xl-block">&nbsp;&nbsp;Home</span>
+            </div>
+          </a>
+          <a href="index.html" class="list-group-item list-group-item-action active">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-hashtag fa-sm" width="16px" height="16px"></i>
+              <span class="d-sm-none d-none d-xl-block">&nbsp;&nbsp;Explore</span>
+            </div>
+          </a>
+          <a href="../notifications.html" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-bell fa-sm" width="16px" height="16px"></i>
+              <span class="d-sm-none d-none d-xl-block">&nbsp;&nbsp;Notifications</span>
+            </div>
+          </a>
+          <a href="../messages.html" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-envelope fa-sm" width="16px" height="16px"></i>
+              <span class="d-sm-none d-none d-xl-block">&nbsp;&nbsp;Messages</span>
+            </div>
+          </a>
+          <a href="../bookmarks/bookmarks-css.html" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-bookmark fa-sm" width="16px" height="16px"></i>
+              <span class="d-sm-none d-none d-xl-block">&nbsp;&nbsp;Bookmarks</span>
+            </div>
+          </a>
+          <a href="../lists.html" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-list fa-sm" width="16px" height="16px"></i>
+              <span class="d-sm-none d-none d-xl-block">&nbsp;&nbsp;Lists</span>
+            </div>
+          </a>
+          <a href="../profile.html" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-user fa-sm" width="16px" height="16px"></i>
+              <span class="d-sm-none d-none d-xl-block">&nbsp;&nbsp;Profile</span>
+            </div>
+          </a>
+          <a href="../more.html" class="list-group-item list-group-item-action">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-circle-plus"  width="16px" height="16px"></i>
+                <span class="d-sm-none d-none d-xl-block">&nbsp;&nbsp;More</span>
+            </div>
+          </a>
+        </div>
+        <button class="wd-tuit-button">Tuit</button>
+      </div>
+      
+  
+     <!-- Main Content -->
+
+
+      <div class="col-md-8 col-sm-9 col-lg-6 col-9">
+        <!-- Center Column -->
+        <div class="explore-content">
+          <!-- Search field -->
+          <div class="wd-header">
+            <div class="wd-search-container">
+              <div class="wd-magnifying-glass"><i class="fas fa-magnifying-glass"></i></div>
+              <input type="text" class="wd-search-input" placeholder="Search Tuiter">
+            </div>
+            <div class="wd-gear-icon"><i class="fas fa-gear"></i></div>
+          </div>
+
+          <!-- Tabs -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="for-you.html">For You</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="trending.html">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="sports.html">Sports</a>
+            </li>
+            <div class = "d-sm-none d-xl-block d-md-inline-flex d-none">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="entertainment.html">Entertainment</a>
+            </li>
+          </div>
+          </ul>
+
+          <!-- Image Section -->
+          <section class="wd-image-container">
+            <img class="wd-image" src="sunset2.jpg" alt="Image">
+            <div class="wd-image-overlay">
+              <h4><b>Pink Skies all over</b></h4>
+            </div>
+          </section>
+
+          <!-- Tuits List -->
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="for-you">
+              <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="text-muted">Trending in News</div>
+                    <span class="fw-bold"><b>React</b></span>
+                    <svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                    <div class="wd-text-tuit d-flex align-items-center">
+                      <p>The React community has been presented with an option to adopt individual new features once their design is nearing its final stages.</p>
+                      <img src="react.png" alt="Image 1" class="wd-list-item-image" style="width: 65px; height: 65px; margin-left: auto;">
+                    </div>
+                    <div class="text-muted">56.1K Tweets</div>      
+                                
+                </li>
+                <li class="list-group-item">
+                    <div class="text-muted">Trending in Technology</div>
+                    <span class="fw-bold"><b>Starlink</b></span>
+                    <svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                    <div class="wd-text-tuit d-flex align-items-center">
+                      <p>Second-gen satellites represent a step forward in Starlink capability with key technologies to provide ~4x more capacity.</p>
+                      <img src="starlink.jpg" alt="Image 1" class="wd-list-item-image" style="width: 65px; height: 65px; margin-left: auto;">
+                    </div>
+                    <div class="text-muted">26.3K Tweets</div>      
+                                
+                </li>
+                <li class="list-group-item">
+                  <div class="text-muted">Trending in News</div>
+                  <span class="fw-bold"><b>Poland</b></span>
+                  <svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                  <div class="wd-text-tuit d-flex align-items-center">
+                    <p>Polish National Flag day on May 2nd...</p>
+                    <img src="poland.png" alt="Image 1" class="wd-list-item-image" style="width: 65px; height: 65px; margin-left: auto;">
+                  </div>
+                  <div class="text-muted">40.1K Tweets</div>      
+                              
+              </li>
+              <li class="list-group-item">
+                <div class="text-muted">Trending in Sports</div>
+                <span class="fw-bold"><b>Cricket</b></span>
+                <svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                <div class="wd-text-tuit d-flex align-items-center">
+                  <p>An exciting battle awaits with the ICC World Test Championship Final just around the corner.</p>
+                  <img src="cricket.png" alt="Image 1" class="wd-list-item-image" style="width: 65px; height: 65px; margin-left: auto;">
+                </div>
+                <div class="text-muted">88.5K Tweets</div>      
+                            
+            </li>
+            </li>
+           <li class="list-group-item">
+              <div class="text-muted">Trending in Science</div>
+              <span class="fw-bold"><b>Tesla</b></span>
+              <svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+              <div class="wd-text-tuit d-flex align-items-center">
+                <p>Multiple fully Tesla-made Bots now walking around & learning about the real world.</p>
+                <img src="Tesla_logo.png" alt="Image 1" class="wd-list-item-image" style="width: 65px; height: 65px; margin-left: auto;">
+              </div>
+              <div class="text-muted">88.5K Tweets</div>      
+                        
+            </li>
+            </ul>              
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      
+      <div class="col-md-3 d-sm-none d-xl-block d-md-none d-none">
+        <!-- Right Column -->
+        <div class="sidebar">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <h5>Who to follow</h5>
+            </li>
+            <li class="nav-item">
+              <div class="d-flex align-items-start">
+                <img src="zimmer.jpg" alt="Avatar" class="wd-avatar">
+                <div class="wd-follow-info ml-3">
+                  <span class="wd-name">Hans Zimmer</span>
+                  <svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+
+                  <div class="wd-username">@hzimmeroffl</div>
+                </div>
+                <button class="wd-follow-button btn btn-primary ml-auto">Follow</button>
+              </div>
+            </li>
+            <br>
+            <li class="nav-item">
+              <div class="d-flex align-items-start">
+                <img src="oprah.jpg" alt="Avatar" class="wd-avatar">
+                <div class="wd-follow-info ml-3">
+                  <span class="wd-name">Oprah Winfrey</span>
+                  <svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                  <div class="wd-username">@oprahhere</div>
+                </div>
+                <button class="wd-follow-button btn btn-primary ml-auto">Follow</button>
+              </div>
+            </li>
+            <br>
+            <li class="nav-item">
+              <div class="d-flex align-items-start">
+                <img src="joe.jpg" alt="Avatar" class="wd-avatar">
+                <div class="wd-follow-info ml-3">
+                  <span class="wd-name">Joe Biden</span>
+                  <svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                  <div class="wd-username">@potus</div>
+                </div>
+                <button class="wd-follow-button btn btn-primary ml-auto">Follow</button>
+              </div>
+            </li>
+            <br>
+            <li class="nav-item">
+              <div class="d-flex align-items-start">
+                <img src="queen.jpg" alt="Avatar" class="wd-avatar">
+                <div class="wd-follow-info ml-3">
+                  <span class="wd-name">Queen Elizabeth</span>
+                  <svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                  <div class="wd-username">@Queenoftheuk</div>
+                </div>
+                <button class="wd-follow-button btn btn-primary ml-auto">Follow</button>
+              </div>
+            </li>
+            <br>
+          </ul>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+/* Global Styles */
+body {
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 110%;
+  }
+  
+  /* Navigation */
+  .wd-navigation {
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    border-right: 2px  #e6ecf0;
+    border-left: 2px  #e6ecf0;
+    border-top: 2px  #e6ecf0;
+    border-bottom: 2px #e6ecf0;
+    text-align: left;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    
+    }
+
+  
+  .wd-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+
+  }
+  
+  .wd-navigation ul li a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    justify-content: center;
+
+  }
+  
+  .wd-navigation ul li a:hover {
+    background-color: #e6ecf0;
+  }
+  
+  .wd-navigation .active {
+    background-color: #e6ecf0;
+    font-weight: bold;
+  }
+
+  .wd-twitter{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 90px;
+    color: #1da1f2;
+  }
+  
+  .wd-tuit-button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    width:80%;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: width 0.3s;
+    }
+    
+    @media (max-width: 768px) {
+      .minimizable-button {
+        width: 50px;
+      }
+    }
+    
+  
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .sidebar h5 {
+    margin-bottom: 10px;
+  }
+  
+  .nav-link {
+    color: #1da1f2 !important;
+  }
+  
+  /* Explore Content */
+  .explore-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .wd-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .wd-search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+    padding: 5px 20px;
+    width:100%;
+  }
+  
+  .wd-magnifying-glass {
+    color: gray;
+    margin-right: 5px;
+  }
+  
+  .wd-search-input {
+    border: none;
+    background-color: #f5f8fa;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    color: #14171a;
+  }
+  
+  .wd-gear-icon {
+    color: #1da1f2;
+  }
+  
+  .nav-tabs {
+    margin-bottom: 20px;
+  }
+  
+  .wd-image-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .wd-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .wd-image-overlay {
+    position: absolute;
+   bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .wd-tuits {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .wd-tuit {
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px;
+  }
+  
+  .wd-tuit-time {
+    color: #657786;
+    font-size: 12px;
+  }
+  
+  .wd-tuit-content {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Who to Follow */
+  .wd-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .wd-follow-info {
+    flex-grow: 1;
+  }
+  
+  .wd-name {
+    font-weight: bold;
+  }
+  
+  .wd-username {
+    color: #657786;
+  }
+  
+  .wd-follow-button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .wd-space{
+    margin-left: 590px;
+  }
+  
+  .wd-text-tuit {
+    display: flex;
+  }
+  
+  .wd-text-tuit p {
+    flex: 1;
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
