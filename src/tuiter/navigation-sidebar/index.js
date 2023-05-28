@@ -11,6 +11,8 @@ const NavigationSidebar = () => {
            {link}
          </Link>
      )}
+     <p className="text-white fs-6">{ignore}</p>
+      <p className="text-white fs-6">{tuiter}</p>
    </div>
  );
 };

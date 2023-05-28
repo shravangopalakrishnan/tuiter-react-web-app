@@ -6,7 +6,7 @@ const index1 = numberArray1.indexOf(3);
 return (
     <>
       <h2>Array index and length</h2>
-      numberArray1 = {numberArray1} <br />
+      length1 = {length1} <br />
       index1 = {index1}<br/>
     </>
   );

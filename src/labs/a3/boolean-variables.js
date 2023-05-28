@@ -10,7 +10,7 @@ function BooleanVariables() {
     console.log(floatingPointNumber);
     let true5 = floatingPointNumber === 321.432; 
     let false3 = numberVariable < 100;
-    let sortaTrue = '1' == 1;  // never use this ==
+    let sortaTrue = '1' === 1;  // never use this ==
     let notTrue = '1' === 1; // always use this ===
   
     return (
