@@ -1,0 +1,34 @@
+.tuit-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .tuit-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .username {
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  
+  .text-secondary::before {
+    content: "·";
+    margin: 0 5px;
+  }
+  
+  .tuit-body {
+    margin-bottom: 40px;
+  }
+  

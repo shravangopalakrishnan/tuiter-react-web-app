@@ -1,11 +1,31 @@
 [{ "_id": 123, "topic": "Space", "userName": "SpaceX",
    "title": "Tesla CyberTruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-   "time": "2h",   "image": "tesla.png" },
+   "time": "2h",   "image": "spacex.png",
+   "liked": true,
+   "replies": 234,
+   "retuits": 567,
+   "likes": 1678,
+   "handle": "@spacex",
+   "tuit": " SpaceX is a private American aerospace manufacturer and space transportation company founded by entrepreneur Elon Musk in 2002. The company's ultimate goal is to revolutionize space technology and enable the colonization of Mars. SpaceX has achieved numerous groundbreaking milestones in the space industry, making it one of the most prominent players in the field."
+   },
  { "_id": 234, "topic": "Space",   "userName": "SpaceX",
    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
-   "time": "2h",   "image": "spacex.png" },
+   "time": "2h",   "image": "spacex.png",
+   "liked": true,
+   "replies": 123,
+   "retuits": 432,
+   "likes": 2345,
+   "handle": "@spacex",
+   "tuit": "SpaceX has also made significant progress in the field of spacecraft technology with the development of the Dragon spacecraft. The Dragon spacecraft has been used for cargo resupply missions to the International Space Station (ISS) under NASA's Commercial Resupply Services program. It has played a crucial role in supporting the continuous presence of astronauts on the ISS."
+  },
  { "_id": 345, "topic": "Energy",  "userName": "Tesla",
    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
-   "time": "4d",   "image": "tesla.png" }
+   "time": "4d",   "image": "tesla.png",
+   "liked": true,
+   "replies": 123,
+   "retuits": 432,
+   "likes": 2345,
+   "handle": "@tesla",
+   "tuit": " Exciting news from @Tesla! The latest update brings even more advanced features to their electric vehicles, making driving safer and more enjoyable than ever. With Autopilot and Full Self-Driving capabilities, Tesla is leading the way towards a future of autonomous transportation. #TeslaInnovation #ElectricRevolution "
+   }
 ]
-

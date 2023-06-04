@@ -1,0 +1,18 @@
+.tuit-stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .like-icon {
+    cursor: pointer;
+  }
+  
+  .liked {
+    color: red;
+  }
+  
+  .stat-item {
+    margin-left: 20px;
+  }
+  
