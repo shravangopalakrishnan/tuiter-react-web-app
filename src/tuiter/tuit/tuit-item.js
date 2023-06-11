@@ -3,13 +3,13 @@ import { MdVerified } from "react-icons/md";
 import { RxCrossCircled, RxDotFilled } from "react-icons/rx";
 import TuitStats from "./tuit-stats";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 import "./tuit-item.css";
 
 function TuitItem({ tuit, onLike }) {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
 
   return (

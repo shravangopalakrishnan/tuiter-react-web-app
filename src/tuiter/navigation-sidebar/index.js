@@ -1,16 +1,16 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { AiFillHome } from "react-icons/ai";
-import {FaHashtag} from "react-icons/fa";
-import {FaBell, FaList,  FaUserAlt, FaEllipsisH} from "react-icons/fa";
-import  {BsEnvelopeFill,BsBookmarkFill} from "react-icons/bs";
-
-
-
+import { FaHashtag } from "react-icons/fa";
+import { FaBell, FaList, FaUserAlt, FaEllipsisH } from "react-icons/fa";
+import { BsEnvelopeFill, BsBookmarkFill } from "react-icons/bs";
+import { GrLogin } from "react-icons/gr";
 
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
   const [ignore, tuiter, active] = pathname.split("/");
+  const { currentUser } = useSelector((state) => state.user);
   const links = [
     { to: "/tuiter/home", label: "Home", icon: AiFillHome },
     { to: "/tuiter/explore", label: "Explore", icon: FaHashtag },
@@ -18,7 +18,6 @@ const NavigationSidebar = () => {
     { to: "/tuiter/messages", label: "Messages", icon: BsEnvelopeFill },
     { to: "/tuiter/bookmarks", label: "Bookmarks", icon: BsBookmarkFill },
     { to: "/tuiter/lists", label: "Lists", icon: FaList },
-    { to: "/tuiter/profile", label: "Profile", icon: FaUserAlt },
     { to: "/tuiter/more", label: "More", icon: FaEllipsisH },
   ];
 
@@ -36,8 +35,24 @@ const NavigationSidebar = () => {
           {link.label}
         </Link>
       ))}
-      <p className="text-white fs-6">{ignore}</p>
-      <p className="text-white fs-6">{tuiter}</p>
+      {!currentUser && (
+        <>
+          <Link className="list-group-item" to="/tuiter/login">
+            <GrLogin className="me-2" />
+            Login
+          </Link>
+          <Link className="list-group-item" to="/tuiter/register">
+            <FaUserAlt className="me-2" />
+            Register
+          </Link>
+        </>
+      )}
+      {currentUser && (
+        <Link className="list-group-item" to="/tuiter/profile">
+          <FaUserAlt className="me-2" />
+          Profile
+        </Link>
+      )}
     </div>
   );
 };
