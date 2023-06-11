@@ -16,16 +16,11 @@ function ProfileScreen() {
     try {
       console.log(profile);
       await dispatch(updateUserThunk(profile));
-      // Profile update successful
     } catch (error) {
       if (error.response && error.response.status === 409) {
-        // Handle conflict error
         console.log("Conflict error: User already exists");
-        // Display an error message or take appropriate action
       } else {
-        // Handle other errors
         console.log("Error:", error.message);
-        // Display a generic error message or take appropriate action
       }
     }
   };
