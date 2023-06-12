@@ -9,7 +9,7 @@ function ProfileScreen() {
     firstName: "",
     lastName: "",
   });
-  const dispatch = useDispatch(); //
+  const dispatch = useDispatch(); 
   const navigate = useNavigate();
 
   const save = async () => {
