@@ -5,6 +5,7 @@ const WhoToFollowListItem = (
  }
 ) => {
  return(
+  <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 d-none d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
   <li className="list-group-item">
    <div className="row">
      <div className="col-2">
@@ -19,6 +20,7 @@ const WhoToFollowListItem = (
      </div>
    </div>
   </li>
+  </div>
  );
 };
 export default WhoToFollowListItem;

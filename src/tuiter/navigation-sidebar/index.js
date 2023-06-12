@@ -32,25 +32,33 @@ const NavigationSidebar = () => {
           }`}
         >
           {React.createElement(link.icon, { className: "me-2" })}
+          <span className="d-none d-xl-inline">
           {link.label}
+          </span>
         </Link>
-      ))}
+      ))}  
       {!currentUser && (
         <>
           <Link className="list-group-item" to="/tuiter/login">
             <GrLogin className="me-2" />
+            <span className="d-none d-xl-inline">
             Login
+            </span>
           </Link>
           <Link className="list-group-item" to="/tuiter/register">
             <FaUserAlt className="me-2" />
+            <span className="d-none d-xl-inline">
             Register
+            </span>
           </Link>
         </>
       )}
       {currentUser && (
         <Link className="list-group-item" to="/tuiter/profile">
           <FaUserAlt className="me-2" />
+          <span className="d-none d-xl-inline">
           Profile
+          </span>
         </Link>
       )}
     </div>
