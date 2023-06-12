@@ -28,8 +28,8 @@ function TuitStats({ comments, retweets, likes, liked }) {
 
   const handleDislikeClick = () => {
     if (ifDisliked) {
-      dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 }));
-      setDislikeCount((prevDislikeCount) => prevDislikeCount + 1);
+      dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes - 1 }));
+      setDislikeCount((prevDislikeCount) => prevDislikeCount - 1);
     } else {
       dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 }));
       setDislikeCount((prevDislikeCount) => prevDislikeCount + 1);

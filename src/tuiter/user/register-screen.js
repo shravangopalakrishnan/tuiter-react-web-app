@@ -10,6 +10,10 @@ function RegisterScreen() {
   const dispatch = useDispatch();
 
   const handleRegister = async () => {
+    if (!username || !password) {
+      alert("Please provide a username and password.");
+      return;
+    }
     try {
       await dispatch(registerThunk({ username, password }));
       navigate("/tuiter/profile");
